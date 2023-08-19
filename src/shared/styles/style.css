@@ -1,0 +1,103 @@
+.botChat {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#015EC4 0%, #2187F4 50%, #106FD6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botChatContent {
+  width: 40%;
+  height: 100%;
+  height: 80%;
+}
+
+.pageTitle, .subTitle {
+  color: #fff;
+}
+
+.pageTitle {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.chat {
+  margin-top: 20px;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 10px;
+  height: 65%;
+}
+
+.botMessage, .userMessage {
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.userMessage {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message {
+  display: inline-flex;
+  align-items: center;
+}
+
+.botIcon {
+  margin: 0 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.userIcon {
+  margin: 0 15px;
+  width: 32px;
+  height: 32px;
+}
+
+.botText {
+  color: #000;
+  border-radius: 28px;
+  padding: 12px 20px 12px 20px;
+  background-color: rgba(34, 118, 245, 0.2);
+}
+
+.userText {
+  color: #fff;
+  border-radius: 28px;
+  padding: 12px 20px 12px 20px;
+  background-color: #2276F5;
+}
+
+.queryInputWrap {
+  margin-top: 30px;
+  height: 70px;
+}
+
+.queryInput {
+  border-radius: 16px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  width: calc(100% - 40px);
+  font-size: 20px;
+}
+
+.queryInput::-moz-placeholder {
+  font-size: 20px;
+  color: #CED0D6;
+}
+
+.queryInput::placeholder {
+  font-size: 20px;
+  color: #CED0D6;
+}
+
+.sendButton {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}/*# sourceMappingURL=style.css.map */
