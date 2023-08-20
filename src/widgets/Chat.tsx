@@ -4,13 +4,19 @@ import { IMessage } from "../shared/types/IMessage";
 
 
 interface IChat {
-  messages: IMessage[]
+  messages: IMessage[];
 }
 
 export const Chat: FC<IChat> = ({ messages }) => {
 
   const renderMessages = useMemo(() => (
-    messages.map((item, index) => <Message key={index} author={item.author} text={item.text} />)
+    messages.map((item, index) => (
+      <Message
+        key={index}
+        author={item.author}
+        text={item.text}
+      />
+    ))
   ), [messages])
 
   return (
