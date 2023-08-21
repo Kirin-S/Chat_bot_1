@@ -9,7 +9,13 @@ export const Message: FC<IMessage> = ({ author, text }) => {
   const [isSent, setIsSent] = useState(false);
   const [isUserMesRendered, setIsUserMesRendered] = useState(false);
 
-  const mesWidth = text.length > 120 ? '500px' : '450px';
+  const mesWidth = text.length > 120
+    ? window.screen.width > 768
+      ? '500px'
+      : '270px'
+    : window.screen.width > 768
+      ? '450px'
+      : '250px'
   
   useEffect(() => {
     setTimeout(() => {

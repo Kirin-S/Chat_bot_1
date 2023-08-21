@@ -150,4 +150,13 @@
 .sendButton:hover {
   cursor: pointer;
   background-color: #0067d4;
+}
+
+@media (max-width: 768px) {
+  .botChatContent {
+    width: 80%;
+  }
+  .botMessage, .userMessage {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */
